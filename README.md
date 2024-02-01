@@ -1,6 +1,6 @@
 # PulseAudio profile switcher
 
-My computer is connected with a optical cable from the soundcard on the motherboard to a speaker. I also have a headset for video meetings and i want to switch back and forth between the speaker and the headset. Using the panel plugin in xfce4 requires you to go into the audio mixer, then to `Profiles`, and then change the profile from a dropdown list for the soundcard in question. Too much work.
+My computer is connected with a optical cable from the sound card on the motherboard to a speaker. I also have a headset for video meetings and i want to switch back and forth between the speaker and the headset. Using the panel plugin in xfce4 requires you to go into the audio mixer, then to `Profiles`, and then change the profile from a drop-down list for the sound card in question. Too much work.
 
 This small bash script will take the name of the card you want to modify and the name of a profile and set the card to that profile. See the name of the card and its profiles by running `pactl list cards`
 
@@ -55,7 +55,7 @@ set_output.sh "alsa_card.pci-0000_0b_00.4" "output:analog-stereo+input:analog-st
 set_output.sh "alsa_card.pci-0000_0b_00.4" "output:iec958-stereo"
 ```
 
-I then created launcers in the xfce4 panel, one for each command (either add the repo dir to your `$PATH` or specify full path to the script), and gave them nice icons representing a headset and speaker respectivly. Then you just press one of the icons and the sound comes out from a different place.
+I then created launchers in the xfce4 panel, one for each command (either add the repo dir to your `$PATH` or specify full path to the script), and gave them nice icons representing a headset and speaker respectively. Then you just press one of the icons and the sound comes out from a different place.
 
 ## Under the hood
 
