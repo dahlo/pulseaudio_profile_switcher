@@ -55,7 +55,7 @@ set_output.sh "alsa_card.pci-0000_0b_00.4" "output:analog-stereo+input:analog-st
 set_output.sh "alsa_card.pci-0000_0b_00.4" "output:iec958-stereo"
 ```
 
-I then created launcers in the xfce4 panel, one for each command, and gave them nice icons representing a headset and speaker respectivly. Then you just press one of the icons and the sound comes out from a different place.
+I then created launcers in the xfce4 panel, one for each command (either add the repo dir to your `$PATH` or specify full path to the script), and gave them nice icons representing a headset and speaker respectivly. Then you just press one of the icons and the sound comes out from a different place.
 
 ## Under the hood
 
